@@ -1,0 +1,56 @@
+/* Set size of page */
+html{
+	height: 100%;
+}
+
+.headerbox {
+	background-image: url("images/grass.jpg");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+.gallery {
+	position: relative;
+}
+
+.gallery img{
+	display: block;
+	height: 300px;
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.gallery1 {
+	position: relative;
+}
+
+.gallery1 img{
+	height: 300px;
+	width: 100%;
+	margin: 5px;
+}
+
+#comment {
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 20px; 
+    width: 100%;
+    height: 100%; 
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+ }
+ 
+.footer p {
+   color: white;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tim's Gardening Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onkeypress="showkeypress()">
+<script>
+function showkeypress() {
+//Detect code for key press in unicode
+   var x = event.keyCode;
+//Set key to variable
+   var a = "109"; //Key M
+   
+//If key is M then
+   if (x==a) {
+   setTimeout(myTimeout1, 100)
+   setTimeout(myTimeout2, 300)
+   setTimeout(myTimeout3, 500)
+   setTimeout(myTimeout4, 700)
+   }
+   }
+   
+   //Functions to flash image item for M key
+   function myTimeout1() {
+   //Grey box to simulate flash
+	document.getElementById("example1").style.filter = "grayscale(100%)";
+	}
+	
+	function myTimeout2() {
+	//Return to original colour
+	document.getElementById("example1").style.filter = "grayscale(0%)";
+	}
+	
+	function myTimeout3() {
+	//Grey box to simulate flash
+	document.getElementById("example1").style.filter = "grayscale(100%)";
+	}
+	
+	function myTimeout4() {
+	//Return to original colour
+	document.getElementById("example1").style.filter = "grayscale(0%)";
+	}
+   
+</script>
+
+<div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Tim's Gardening Services</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#1">What We Offer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#2">Previous Work</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#3">Past Customers Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#4">Contact Us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center headerbox">
+<div class="container">
+  <br>
+  <br>
+  <h1>Tim's Gardening Services</h1>
+  <br>
+  <br>
+</div>
+</div>
+
+<div class="gallery1">
+<div class="container-fluid text-center" style="margin-top:30px" id="1"> 
+	<h2>What We Offer</h2>
+    <br>
+	<div class="row">
+    <div class="col-lg-4 col-sm-12">
+	<h3> Simple Maintenance </h3>
+	<img src="images/bbqgarden.jpg" class="img-fluid rounded">
+	<p> Just because you don't have time to keep your garden tidy doesn't mean you can't enjoy it when the time comes.</p>
+	<p>We take up any job, no matter how big or small, so any outdoor space is a perfect place to relax or entertain.</p>
+	<button class="form-control btn btn-secondary btn-block" type="button" href=" "> See More </button>
+	</div>
+	
+	<div class="col-lg-4 col-sm-12">
+	<h3> Adding Feature pieces </h3>
+	<img src="images/patiogarden.jpg" class="img-fluid rounded">
+	<p> Whether it's a patio, koi pond or bbq area, our very experienced team will no doubt be able to meet your needs. </p>
+	<p> We have a selection of key pieces that will really make your garden Wow friends and family alike. </p>
+	<button class="form-control btn btn-secondary btn-block" type="button" href=" "> See More </button>
+	</div>
+	
+	<div class="col-lg-4 col-sm-12">
+	<h3> Custom Designs </h3>
+	<img src="images/pathwaygarden.jpg" class="img-fluid rounded">
+	<p> Talk to us on our mobile number or over email, if you have a specific idea in mind or we can help you create your vision.</p>
+	<p>No matter how difficult your ideas may seem we will try our best to make them come alive! </p>
+	<button class="form-control btn btn-secondary btn-block" type="button" href=" "> See More </button>
+	</div>
+    </div>
+</div>
+</div> 
+	<br>
+	<br>
+
+<div class="gallery bg-light">
+<div class="container-fluid text-center" style="margin-top:30px" id="2">
+  <h2>Our Previous Work</h2>
+  <br>
+ <div class="row">
+    <div class="col-lg-3 col-sm-12">
+	<h3> Full Redesign - David and Laura </h3>
+	<img id="example1" src="images/bbqgarden.jpg" class="img-fluid rounded">
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> New Patio - Fred and Daphne </h3>
+	<img src="images/patiogarden.jpg" class="img-fluid rounded">
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> Scenic Pathway - Tim </h3>
+	<img src="images/pathwaygarden.jpg" class="img-fluid rounded">
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> Brighter Garden - Simon and Holly </h3>
+	<img src="images/rivergarden.jpg" class="img-fluid rounded">
+	</div>
+    </div>
+</div>
+</div>
+    <br>
+	<br>
+
+<div class="gallery1">
+<div class="container-fluid text-center" style="margin-top:30px" id="3">
+	<h2>What Have Past Customers Said</h2> 
+	<br>
+	<div class="row">
+	 <div class="col-lg-3 col-sm-12">
+	<h3> David - Leeds</h3>
+	<p id="comment">"Great service and the guys were really helpful. Really knew thier stuff and could talk to them if we had any problems."</p>
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> Dale - Skelmanthorpe</h3>
+	<p id="comment">"Had a patio put in as the garden was looking a bit tired, really livens up the space and gives us a great excuse to invite friends over. Would definitely recommend."</p>
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> Tim - Marsden </h3>
+	<p id="comment">"Had a custom path made in front of my cottage and it looks amazing! Really adds that special touch when enjoying the garden. Thank you so much to Tim and the guys for going above and beyond."</p>
+	</div>
+	
+	<div class="col-lg-3 col-sm-12">
+	<h3> Holly - Meltham </h3>
+	<p id="comment">"Had some large trees cut down and it really makes the garden come alive, now I've more space to entertain and the kids love it when the suns out. Couldn't have asked for anything better."</p>
+	</div>
+    </div>
+    </div>
+</div>
+</div>
+    <br>
+	<br>
+
+<div class="container-fluid text-center" style="margin-top:30px">
+<form>
+  <div class="row">
+    <div class="col-lg-4 col-sm-12">
+	<h2>Contact Us</h2>
+    </div>
+	
+	<div class="col-lg-8 col-sm-12 right">
+	<div class="form-group">
+	 <input type="text" class="form-control" placeholder="Your Name" name="">
+    </div>	
+	
+	<div class="form-group">
+	 <input type="email" class="form-control" placeholder="YourEmail@email.com" name="email">
+    </div>	
+	
+	<div class="form-group">
+	 <textarea class="form-control">
+	 
+	 </textarea>
+    </div>	
+	
+	<div>
+	 <input type="submit" class="form-control btn btn-secondary btn-block" value="Send" name="">
+    </div>	
+    </div>
+	</form>
+</div>
+</div>
+<br>
+
+
+<footer>
+<div class="container-fluid text-center bg-dark footer" id="4">
+<div class="row">
+ <div class="col-sm-6">
+  <br>
+  <h3> Our Address </h3>
+  <p>Tim's Gardening Services</p>
+  <p>Address Line 1, Address Line 2, Postcode, County </p>
+  </div>
+ <div class="col-sm-6">
+  <br>
+  <h3> How to get in touch </h3>
+  <p>If you have any queries contacts us on: Mobile Number or Email</p>
+  <p>We will try answer any queries as quickly as possible!</p>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
